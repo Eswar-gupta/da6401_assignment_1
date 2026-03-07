@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Run inference on test set')
-    parser.add_argument('--model_path', type=str, required=True)
+    parser.add_argument('--model_path', type=str,default='src\best_model.npy')
     parser.add_argument('-d', '--dataset', type=str, default='mnist')
     parser.add_argument('-b', '--batch_size', type=int, default=64)
     parser.add_argument('-nhl', '--num_layers', type=int, default=2)
@@ -37,6 +37,7 @@ def main():
     args.learning_rate = 0.001
     args.weight_decay = 0.0
     args.epochs = 1
+    args.model_path = r"C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\src\best_model.npy"
 
     _, _, X_test, y_test = load_data(args.dataset)
 
