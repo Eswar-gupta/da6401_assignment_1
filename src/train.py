@@ -37,9 +37,10 @@ def main():
     _, test_loss, test_acc = net.evaluate(X_test, y_test)
     print(f"Test loss: {test_loss:.4f} - Test acc: {test_acc:.4f}")
 
+    ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
     models_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'models')
     os.makedirs(models_dir, exist_ok=True)
-    np.save(os.path.join(models_dir, 'bestmodel.npy'), net.get_weights(), allow_pickle=True)
+    np.save(os.path.join(ROOT_DIR,'src','bestmodel.npy'), net.get_weights(), allow_pickle=True)
 
     config = {
         'dataset': args.dataset,
@@ -54,7 +55,7 @@ def main():
         'weight_decay': args.weight_decay,
         'epochs': args.epochs,
     }
-    with open(os.path.join(models_dir, 'bestconfig.json'), 'w') as f:
+    with open(os.path.join(ROOT_DIR,'src', 'bestconfig.json'), 'w') as f:
         json.dump(config, f, indent=2)
 
     print("Training complete!")
