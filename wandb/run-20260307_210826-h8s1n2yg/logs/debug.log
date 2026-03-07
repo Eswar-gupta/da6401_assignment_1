@@ -1,0 +1,25 @@
+2026-03-07 21:08:26,122 INFO    Thread-52 (_run_job):80660 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-07 21:08:26,122 INFO    Thread-52 (_run_job):80660 [wandb_setup.py:_flush():81] Configure stats pid to 80660
+2026-03-07 21:08:26,123 INFO    Thread-52 (_run_job):80660 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-07 21:08:26,124 INFO    Thread-52 (_run_job):80660 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\wandb\run-20260307_210826-h8s1n2yg\logs\debug.log
+2026-03-07 21:08:26,124 INFO    Thread-52 (_run_job):80660 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\wandb\run-20260307_210826-h8s1n2yg\logs\debug-internal.log
+2026-03-07 21:08:26,125 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():844] calling init triggers
+2026-03-07 21:08:26,125 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'tanh', 'batch_size': 64, 'learning_rate': 0.0392505444953396, 'loss': 'mse', 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'zeros'}
+config: {'_wandb': {}}
+2026-03-07 21:08:26,125 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():892] starting backend
+2026-03-07 21:08:29,557 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 21:08:29,566 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():903] backend started and connected
+2026-03-07 21:08:29,567 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'tanh', 'batch_size': 64, 'learning_rate': 0.0392505444953396, 'loss': 'mse', 'optimizer': 'rmsprop', 'weight_decay': 0, 'weight_init': 'zeros'}
+2026-03-07 21:08:29,569 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():973] updated telemetry
+2026-03-07 21:08:29,688 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 21:08:30,945 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-07 21:08:31,273 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-07 21:08:31,274 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-07 21:08:31,275 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-07 21:08:31,275 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-07 21:08:31,282 INFO    Thread-52 (_run_job):80660 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-07 21:08:56,772 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_finish():2291] finishing run eswar433-indian-institute-of-technology-madras/DA6401_assignement1_EE23B085/h8s1n2yg
+2026-03-07 21:08:56,776 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-07 21:08:56,778 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_restore():2472] restore
+2026-03-07 21:08:56,778 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_restore():2478] restore done
+2026-03-07 21:08:58,240 INFO    Thread-52 (_run_job):80660 [wandb_run.py:_footer_sync_info():3868] logging synced files

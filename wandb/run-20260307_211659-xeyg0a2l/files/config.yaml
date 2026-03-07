@@ -1,0 +1,68 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            2g6ch1zfullx1tu1bkg9ajb58nnfippb:
+                codePath: question_2_point_2.py
+                codePathLocal: question_2_point_2.py
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "789284122624"
+                        used: "507719000064"
+                email: varuna433@gmail.com
+                executable: C:\Users\gurra\anaconda3\envs\DA_Ass1\python.exe
+                git:
+                    commit: 0123f066251c3011fe6a21833d1a1c51f2976e50
+                    remote: https://github.com/Eswar-gupta/da6401_assignment_1.git
+                host: DESKTOP-LO1APP7
+                memory:
+                    total: "16849293312"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\question_2_point_2.py
+                python: CPython 3.11.0
+                root: C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1
+                startedAt: "2026-03-07T15:46:59.198144Z"
+                writerId: 2g6ch1zfullx1tu1bkg9ajb58nnfippb
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 3
+                - 8
+                - 14
+                - 62
+            "4": 3.11.0
+            "5": 0.25.0
+            "8":
+                - 3
+            "10":
+                - 17
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: relu
+batch_size:
+    value: 32
+learning_rate:
+    value: 0.0323420573058503
+loss:
+    value: cross_entropy
+optimizer:
+    value: nag
+weight_decay:
+    value: 0.0005
+weight_init:
+    value: random

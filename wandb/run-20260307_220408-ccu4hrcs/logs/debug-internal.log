@@ -1,0 +1,12 @@
+{"time":"2026-03-07T22:04:11.4987973+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T22:04:12.2667664+05:30","level":"INFO","msg":"stream: created new stream","id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:12.2674306+05:30","level":"INFO","msg":"handler: started","stream_id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:12.2718563+05:30","level":"INFO","msg":"stream: started","id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:12.2718563+05:30","level":"INFO","msg":"writer: started","stream_id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:12.2718563+05:30","level":"INFO","msg":"sender: started","stream_id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:27.6084907+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T22:04:27.9638243+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T22:04:27.9782923+05:30","level":"INFO","msg":"stream: closing","id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:27.9782923+05:30","level":"INFO","msg":"handler: closed","stream_id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:27.9800168+05:30","level":"INFO","msg":"sender: closed","stream_id":"ccu4hrcs"}
+{"time":"2026-03-07T22:04:27.9800168+05:30","level":"INFO","msg":"stream: closed","id":"ccu4hrcs"}

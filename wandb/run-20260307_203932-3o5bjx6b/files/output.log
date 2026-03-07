@@ -1,0 +1,75 @@
+Traceback (most recent call last):
+  File "C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\question_2_point_1.py", line 21, in <module>
+    from keras.datasets import mnist
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\wandb\sdk\lib\import_hooks.py", line 182, in _exec_module
+    self.loader.exec_module(module)
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\__init__.py", line 7, in <module>
+    from keras import _tf_keras as _tf_keras
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\_tf_keras\__init__.py", line 1, in <module>
+    from keras._tf_keras import keras
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\_tf_keras\keras\__init__.py", line 7, in <module>
+    from keras import activations as activations
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize as deserialize
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\activations\__init__.py", line 3, in <module>
+    from keras.src.activations.activations import celu
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\activations\activations.py", line 1, in <module>
+    from keras.src import backend
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\__init__.py", line 1, in <module>
+    from keras.src.backend.config import backend
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\config.py", line 448, in <module>
+    set_nnx_enabled(_NNX_ENABLED)
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\config.py", line 249, in set_nnx_enabled
+    from keras.src.backend.common import global_state
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\common\__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\common\dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\backend\common\variables.py", line 11, in <module>
+    from keras.src.utils.module_utils import tensorflow as tf
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\utils\__init__.py", line 1, in <module>
+    from keras.src.utils.audio_dataset_utils import audio_dataset_from_directory
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\utils\audio_dataset_utils.py", line 4, in <module>
+    from keras.src.utils import dataset_utils
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\utils\dataset_utils.py", line 10, in <module>
+    from keras.src import tree
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\tree\__init__.py", line 1, in <module>
+    from keras.src.tree.tree_api import assert_same_paths
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\tree\tree_api.py", line 13, in <module>
+    from keras.src.tree import optree_impl as tree_impl
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\keras\src\tree\optree_impl.py", line 13, in <module>
+    from tensorflow.python.trackable.data_structures import ListWrapper
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\wandb\sdk\lib\import_hooks.py", line 182, in _exec_module
+    self.loader.exec_module(module)
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\__init__.py", line 49, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\_api\v2\__internal__\__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__ import autograph
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\_api\v2\__internal__\autograph\__init__.py", line 8, in <module>
+    from tensorflow.python.autograph.core.ag_ctx import control_status_ctx # line: 34
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\python\autograph\core\ag_ctx.py", line 21, in <module>
+    from tensorflow.python.autograph.utils import ag_logging
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\python\autograph\utils\__init__.py", line 17, in <module>
+    from tensorflow.python.autograph.utils.context_managers import control_dependency_on_returns
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\python\autograph\utils\context_managers.py", line 19, in <module>
+    from tensorflow.python.framework import ops
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\python\framework\ops.py", line 41, in <module>
+    from tensorflow.core.protobuf import config_pb2
+  File "C:\Users\gurra\anaconda3\envs\DA_Ass1\Lib\site-packages\tensorflow\core\protobuf\config_pb2.py", line 25, in <module>
+    from tensorflow.compiler.xla.tsl.protobuf import coordination_config_pb2 as xla_dot_tsl_dot_protobuf_dot_coordination__config__pb2
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1080, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1504, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1476, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1631, in find_spec
+KeyboardInterrupt

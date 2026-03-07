@@ -1,0 +1,16 @@
+wandb_version: 1
+
+activation:
+  value: tanh
+batch_size:
+  value: 32
+learning_rate:
+  value: 0.0055381006812115965
+loss:
+  value: cross_entropy
+optimizer:
+  value: momentum
+weight_decay:
+  value: 0.005
+weight_init:
+  value: zeros

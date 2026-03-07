@@ -1,0 +1,12 @@
+{"time":"2026-03-07T21:21:09.9567644+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T21:21:10.6503739+05:30","level":"INFO","msg":"stream: created new stream","id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:10.6503739+05:30","level":"INFO","msg":"handler: started","stream_id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:10.654674+05:30","level":"INFO","msg":"stream: started","id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:10.6553208+05:30","level":"INFO","msg":"writer: started","stream_id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:10.6553208+05:30","level":"INFO","msg":"sender: started","stream_id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:45.5929027+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T21:21:46.2292672+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T21:21:46.2420303+05:30","level":"INFO","msg":"stream: closing","id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:46.2420303+05:30","level":"INFO","msg":"handler: closed","stream_id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:46.2433157+05:30","level":"INFO","msg":"sender: closed","stream_id":"ajucfs8v"}
+{"time":"2026-03-07T21:21:46.2433157+05:30","level":"INFO","msg":"stream: closed","id":"ajucfs8v"}

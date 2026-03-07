@@ -1,0 +1,16 @@
+wandb_version: 1
+
+activation:
+  value: sigmoid
+batch_size:
+  value: 64
+learning_rate:
+  value: 0.04451524045172224
+loss:
+  value: mse
+optimizer:
+  value: momentum
+weight_decay:
+  value: 0.0005
+weight_init:
+  value: random

@@ -1,29 +1,52 @@
+"""
+Loss Functions
+"""
+
 import numpy as np
-class Loss:
-    def __init__(self, name):
-        # Normalize loss name: remove underscores and convert to lowercase
-        self.name = name.lower().replace('_', '')
 
-    def compute(self, y_true, y_pred):
-        if self.name == "crossentropy":
-            # y_pred is logits, compute softmax for loss
-            logits = y_pred
-            logits_shifted = logits - np.max(logits, axis=1, keepdims=True)
-            log_sum_exp = np.log(np.sum(np.exp(logits_shifted), axis=1, keepdims=True))
-            log_probs = logits_shifted - log_sum_exp
-            return -np.mean(np.sum(y_true * log_probs, axis=1))
-        elif self.name == "meansquarederror":
-            return np.mean(np.sum((y_pred - y_true) ** 2, axis=1)) / 2
 
-    def output_delta(self, y_true, y_pred):
-        N = y_true.shape[0]
-        if self.name == "crossentropy":
-            # y_pred is logits, compute softmax then subtract y_true
-            logits = y_pred
-            logits_shifted = logits - np.max(logits, axis=1, keepdims=True)
-            exp_logits = np.exp(logits_shifted)
-            softmax_probs = exp_logits / np.sum(exp_logits, axis=1, keepdims=True)
-            return (softmax_probs - y_true) / N
-        elif self.name == "meansquarederror":
-            err = y_pred - y_true
-            return y_pred * (err - np.sum(y_pred * err, axis=1, keepdims=True)) / N
+def softmax(logits):
+    shifted = logits - np.max(logits, axis=1, keepdims=True)
+    exp_values = np.exp(shifted)
+    return exp_values / np.sum(exp_values, axis=1, keepdims=True)
+
+
+class Cross_Entropy:
+
+    def __init__(self):
+        self.probabilities = None
+        self.y_true = None
+
+    def forward(self, logits, y_true):
+        # Compute CE from logits via log-softmax for stable and exact gradients.
+        shifted = logits - np.max(logits, axis=1, keepdims=True)
+        logsumexp = np.log(np.sum(np.exp(shifted), axis=1, keepdims=True))
+        log_probs = shifted - logsumexp
+        self.probabilities = np.exp(log_probs)
+        self.y_true = y_true
+        loss = -np.sum(y_true * log_probs) / logits.shape[0]
+        return loss
+
+    def backward(self):
+        return (self.probabilities - self.y_true) / self.y_true.shape[0]
+
+
+
+class MSE:
+
+    def __init__(self):
+        self.probabilities = None
+        self.y_true = None
+
+    def forward(self, logits, y_true):
+        self.probabilities = softmax(logits)
+        self.y_true = y_true
+        loss = np.mean((self.probabilities - y_true) ** 2)
+        return loss
+
+    def backward(self):
+        batch = self.y_true.shape[0]
+        num_classes = self.y_true.shape[1]
+        grad_prob = 2.0 * (self.probabilities - self.y_true) / (batch * num_classes)
+        dot = np.sum(grad_prob * self.probabilities, axis=1, keepdims=True)
+        return self.probabilities * (grad_prob - dot)

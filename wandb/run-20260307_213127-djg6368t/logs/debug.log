@@ -1,0 +1,25 @@
+2026-03-07 21:31:27,288 INFO    Thread-237 (_run_job):80660 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-07 21:31:27,289 INFO    Thread-237 (_run_job):80660 [wandb_setup.py:_flush():81] Configure stats pid to 80660
+2026-03-07 21:31:27,290 INFO    Thread-237 (_run_job):80660 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-07 21:31:27,292 INFO    Thread-237 (_run_job):80660 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\wandb\run-20260307_213127-djg6368t\logs\debug.log
+2026-03-07 21:31:27,294 INFO    Thread-237 (_run_job):80660 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\wandb\run-20260307_213127-djg6368t\logs\debug-internal.log
+2026-03-07 21:31:27,295 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():844] calling init triggers
+2026-03-07 21:31:27,296 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 32, 'learning_rate': 0.02071437194710529, 'loss': 'mse', 'optimizer': 'nag', 'weight_decay': 0.0005, 'weight_init': 'zeros'}
+config: {'_wandb': {}}
+2026-03-07 21:31:27,296 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():892] starting backend
+2026-03-07 21:31:31,450 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 21:31:31,460 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():903] backend started and connected
+2026-03-07 21:31:31,461 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'relu', 'batch_size': 32, 'learning_rate': 0.02071437194710529, 'loss': 'mse', 'optimizer': 'nag', 'weight_decay': 0.0005, 'weight_init': 'zeros'}
+2026-03-07 21:31:31,463 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():973] updated telemetry
+2026-03-07 21:31:31,632 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 21:31:32,896 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-07 21:31:33,667 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-07 21:31:33,667 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-07 21:31:33,668 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-07 21:31:33,669 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-07 21:31:33,677 INFO    Thread-237 (_run_job):80660 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-07 21:32:21,927 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_finish():2291] finishing run eswar433-indian-institute-of-technology-madras/DA6401_assignement1_EE23B085/djg6368t
+2026-03-07 21:32:21,929 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-07 21:32:21,933 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_restore():2472] restore
+2026-03-07 21:32:21,933 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_restore():2478] restore done
+2026-03-07 21:32:23,680 INFO    Thread-237 (_run_job):80660 [wandb_run.py:_footer_sync_info():3868] logging synced files

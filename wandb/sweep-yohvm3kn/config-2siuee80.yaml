@@ -1,0 +1,16 @@
+wandb_version: 1
+
+activation:
+  value: tanh
+batch_size:
+  value: 64
+learning_rate:
+  value: 0.02086532860728039
+loss:
+  value: mse
+optimizer:
+  value: momentum
+weight_decay:
+  value: 0
+weight_init:
+  value: zeros

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T21:53:44.1238091+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T21:53:44.8625916+05:30","level":"INFO","msg":"stream: created new stream","id":"3m4moijk"}
+{"time":"2026-03-07T21:53:44.8625916+05:30","level":"INFO","msg":"handler: started","stream_id":"3m4moijk"}
+{"time":"2026-03-07T21:53:44.8656686+05:30","level":"INFO","msg":"stream: started","id":"3m4moijk"}
+{"time":"2026-03-07T21:53:44.8663345+05:30","level":"INFO","msg":"writer: started","stream_id":"3m4moijk"}
+{"time":"2026-03-07T21:53:44.8663345+05:30","level":"INFO","msg":"sender: started","stream_id":"3m4moijk"}
+{"time":"2026-03-07T21:54:19.4847603+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T21:54:19.9854281+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T21:54:20.0145416+05:30","level":"INFO","msg":"stream: closing","id":"3m4moijk"}
+{"time":"2026-03-07T21:54:20.0151429+05:30","level":"INFO","msg":"handler: closed","stream_id":"3m4moijk"}
+{"time":"2026-03-07T21:54:20.0172107+05:30","level":"INFO","msg":"sender: closed","stream_id":"3m4moijk"}
+{"time":"2026-03-07T21:54:20.0178864+05:30","level":"INFO","msg":"stream: closed","id":"3m4moijk"}

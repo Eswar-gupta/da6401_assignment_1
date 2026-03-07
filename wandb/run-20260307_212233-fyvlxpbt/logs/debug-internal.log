@@ -1,0 +1,12 @@
+{"time":"2026-03-07T21:22:37.2392183+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T21:22:38.1072746+05:30","level":"INFO","msg":"stream: created new stream","id":"fyvlxpbt"}
+{"time":"2026-03-07T21:22:38.1072746+05:30","level":"INFO","msg":"handler: started","stream_id":"fyvlxpbt"}
+{"time":"2026-03-07T21:22:38.137763+05:30","level":"INFO","msg":"stream: started","id":"fyvlxpbt"}
+{"time":"2026-03-07T21:22:38.137763+05:30","level":"INFO","msg":"writer: started","stream_id":"fyvlxpbt"}
+{"time":"2026-03-07T21:22:38.1383606+05:30","level":"INFO","msg":"sender: started","stream_id":"fyvlxpbt"}
+{"time":"2026-03-07T21:23:03.8813206+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T21:23:04.2852363+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T21:23:04.3291489+05:30","level":"INFO","msg":"stream: closing","id":"fyvlxpbt"}
+{"time":"2026-03-07T21:23:04.3315273+05:30","level":"INFO","msg":"handler: closed","stream_id":"fyvlxpbt"}
+{"time":"2026-03-07T21:23:04.3436561+05:30","level":"INFO","msg":"sender: closed","stream_id":"fyvlxpbt"}
+{"time":"2026-03-07T21:23:04.3436561+05:30","level":"INFO","msg":"stream: closed","id":"fyvlxpbt"}
