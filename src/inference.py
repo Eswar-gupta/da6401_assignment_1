@@ -18,6 +18,13 @@ def parse_arguments():
     parser.add_argument('-nhl', '--num_layers', type=int, default=2)
     parser.add_argument('-sz', '--hidden_size', type=int, nargs='*', default=64)
     parser.add_argument('-a', '--activation', type=str, default='relu')
+    parser.add_argument('-e', '--epochs', type=int, default=1)
+    parser.add_argument('-l', '--loss', type=str, default='crossentropy')
+    parser.add_argument('-o', '--optimizer', type=str, default='adam')
+    parser.add_argument('-lr', '--learning_rate', type=float, default=0.001)
+    parser.add_argument('-wd', '--weight_decay', type=float, default=0.0)
+    parser.add_argument('-wi', '--weight_init', type=str, default='xavier')
+
     return parser.parse_args()
 
 
