@@ -5,12 +5,12 @@
   "loss": "crossentropy",
   "num_layers": 2,
   "hidden_size": [
-    64,
-    32
+    128,
+    128
   ],
   "learning_rate": 0.001,
   "batch_size": 128,
   "weight_init": "xavier",
   "weight_decay": 0.0,
-  "epochs": 10
+  "epochs": 12
 }
