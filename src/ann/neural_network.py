@@ -11,11 +11,11 @@ class NeuralNetwork:
         self.loss_fn = Loss(cli_args.loss)
         self.layers = []
 
-        sizes = [784] + [cli_args.hiddensize] * cli_args.numlayers + [10]
+        sizes = [784] + [cli_args.hidden_size] * cli_args.num_layers + [10]
 
         for i in range(len(sizes) - 1):
             act = cli_args.activation if i < len(sizes) - 2 else "softmax"
-            self.layers.append(NeuralLayer(sizes[i], sizes[i + 1], act, cli_args.weightinit))
+            self.layers.append(NeuralLayer(sizes[i], sizes[i + 1], act, cli_args.weight_init))
 
         self.optimizer = get_optimizer(cli_args, self.layers)
 
