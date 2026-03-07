@@ -40,7 +40,7 @@ def main():
     ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
     models_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'models')
     os.makedirs(models_dir, exist_ok=True)
-    np.save(os.path.join(ROOT_DIR,'src','best_model.npy'), net.get_weights(), allow_pickle=True)
+    np.save(os.path.join(ROOT_DIR,'best_model.npy'), net.get_weights(), allow_pickle=True)
 
     config = {
         'dataset': args.dataset,
@@ -55,7 +55,7 @@ def main():
         'weight_decay': args.weight_decay,
         'epochs': args.epochs,
     }
-    with open(os.path.join(ROOT_DIR,'src', 'best_config.json'), 'w') as f:
+    with open(os.path.join(ROOT_DIR, 'best_config.json'), 'w') as f:
         json.dump(config, f, indent=2)
 
     print("Training complete!")
