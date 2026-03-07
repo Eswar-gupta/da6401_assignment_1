@@ -18,7 +18,7 @@ class NeuralNetwork:
             sizes = [784] + [hidden] * cli_args.num_layers + [10]
 
         for i in range(len(sizes) - 1):
-            act = cli_args.activation if i < len(sizes) - 2 else "softmax"
+            act = cli_args.activation if i < len(sizes) - 2 else "linear"
             self.layers.append(NeuralLayer(sizes[i], sizes[i + 1], act, cli_args.weight_init))
 
         self.optimizer = get_optimizer(cli_args, self.layers)

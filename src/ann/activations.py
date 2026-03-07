@@ -13,6 +13,10 @@ class Activation:
         elif self.name == "softmax":
             e = np.exp(x - np.max(x, axis=1, keepdims=True))
             return e / np.sum(e, axis=1, keepdims=True)
+        elif self.name == "linear":
+            return x
+        else:
+            return x
 
     def derivative(self, x):
         if self.name == "relu":
@@ -22,3 +26,9 @@ class Activation:
             return s * (1 - s)
         elif self.name == "tanh":
             return 1 - np.tanh(x) ** 2
+        elif self.name == "softmax":
+            return np.ones_like(x)
+        elif self.name == "linear":
+            return np.ones_like(x)
+        else:
+            return np.ones_like(x)
