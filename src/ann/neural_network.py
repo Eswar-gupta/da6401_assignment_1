@@ -11,7 +11,11 @@ class NeuralNetwork:
         self.loss_fn = Loss(cli_args.loss)
         self.layers = []
 
-        sizes = [784] + [cli_args.hidden_size] * cli_args.num_layers + [10]
+        hidden = cli_args.hidden_size
+        if isinstance(hidden, list):
+            sizes = [784] + hidden + [10]
+        else:
+            sizes = [784] + [hidden] * cli_args.num_layers + [10]
 
         for i in range(len(sizes) - 1):
             act = cli_args.activation if i < len(sizes) - 2 else "softmax"
