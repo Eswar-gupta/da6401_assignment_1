@@ -1,7 +1,8 @@
 import numpy as np
 class Loss:
     def __init__(self, name):
-        self.name = name
+        # Normalize loss name: remove underscores and convert to lowercase
+        self.name = name.lower().replace('_', '')
 
     def compute(self, y_true, y_pred):
         if self.name == "crossentropy":
