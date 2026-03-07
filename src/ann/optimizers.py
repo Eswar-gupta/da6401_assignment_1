@@ -133,8 +133,8 @@ class Nadam:
             layer.b -= self.lr * mb_bar / (np.sqrt(vb_hat) + self.eps)
 
 def get_optimizer(args, layers):
-    lr = args.learningrate
-    wd = args.weightdecay
+    lr = args.learning_rate
+    wd = args.weight_decay
 
     if args.optimizer == "sgd":
         return SGD(layers, lr, wd)
