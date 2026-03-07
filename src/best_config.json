@@ -1,6 +1,6 @@
 {
   "dataset": "mnist",
-  "optimizer": "adam",
+  "optimizer": "rmsprop",
   "activation": "relu",
   "loss": "crossentropy",
   "num_layers": 2,
