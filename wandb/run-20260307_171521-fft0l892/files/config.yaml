@@ -1,0 +1,46 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            698ippwpl16vol87oicopuepg4aln6c1:
+                codePath: question_2_point_1.py
+                codePathLocal: question_2_point_1.py
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "789284122624"
+                        used: "506660012032"
+                executable: C:\Users\gurra\anaconda3\envs\DA_Ass1\python.exe
+                git:
+                    commit: 070861d92604358e108b9c48e4c4890789ca4431
+                    remote: https://github.com/Eswar-gupta/da6401_assignment_1.git
+                host: DESKTOP-LO1APP7
+                memory:
+                    total: "16849293312"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1\question_2_point_1.py
+                python: CPython 3.11.0
+                root: C:\Users\gurra\OneDrive\Desktop\1Acads\sem-6\DA6401-DL\Final_DL_Ass1\da6401_assignment_1
+                startedAt: "2026-03-07T11:45:21.962757Z"
+                writerId: 698ippwpl16vol87oicopuepg4aln6c1
+        m: []
+        python_version: 3.11.0
+        t:
+            "3":
+                - 2
+                - 16
+            "4": 3.11.0
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+architecture:
+    value: CNN
+dataset:
+    value: CIFAR-100
+epochs:
+    value: 10
+learning_rate:
+    value: 0.02

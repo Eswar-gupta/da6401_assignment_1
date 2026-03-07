@@ -14,9 +14,9 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='Run inference on test set')
     parser.add_argument('--model_path', type=str, required=True)
     parser.add_argument('-d', '--dataset', type=str, default='mnist')
-    parser.add_argument('-b', '--batchsize', type=int, default=64)
-    parser.add_argument('-nhl', '--numlayers', type=int, default=2)
-    parser.add_argument('-sz', '--hiddensize', type=int, default=64)
+    parser.add_argument('-b', '--batch_size', type=int, default=64)
+    parser.add_argument('-nhl', '--num_layers', type=int, default=2)
+    parser.add_argument('-sz', '--hidden_size', type=int, default=64)
     parser.add_argument('-a', '--activation', type=str, default='relu')
     return parser.parse_args()
 

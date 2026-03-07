@@ -14,15 +14,15 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='Train a neural network')
     parser.add_argument('-d', '--dataset', type=str, default='mnist')
     parser.add_argument('-e', '--epochs', type=int, default=1)
-    parser.add_argument('-b', '--batchsize', type=int, default=32)
+    parser.add_argument('-b', '--batch_size', type=int, default=32)
     parser.add_argument('-l', '--loss', type=str, default='crossentropy')
     parser.add_argument('-o', '--optimizer', type=str, default='adam')
-    parser.add_argument('-lr', '--learningrate', type=float, default=0.001)
-    parser.add_argument('-wd', '--weightdecay', type=float, default=0.0)
-    parser.add_argument('-nhl', '--numlayers', type=int, default=2)
-    parser.add_argument('-sz', '--hiddensize', type=int, default=64)
+    parser.add_argument('-lr', '--learning_rate', type=float, default=0.001)
+    parser.add_argument('-wd', '--weight_decay', type=float, default=0.0)
+    parser.add_argument('-nhl', '--num_layers', type=int, default=2)
+    parser.add_argument('-sz', '--hidden_size', type=int, default=64)
     parser.add_argument('-a', '--activation', type=str, default='relu')
-    parser.add_argument('-wi', '--weightinit', type=str, default='xavier')
+    parser.add_argument('-wi', '--weight_init', type=str, default='xavier')
     return parser.parse_args()
 
 
@@ -32,7 +32,7 @@ def main():
     X_train, y_train, X_test, y_test = load_data(args.dataset)
 
     net = NeuralNetwork(args)
-    net.train(X_train, y_train, epochs=args.epochs, batch_size=args.batchsize)
+    net.train(X_train, y_train, epochs=args.epochs, batch_size=args.batch_size)
 
     _, test_loss, test_acc = net.evaluate(X_test, y_test)
     print(f"Test loss: {test_loss:.4f} - Test acc: {test_acc:.4f}")
@@ -46,12 +46,12 @@ def main():
         'optimizer': args.optimizer,
         'activation': args.activation,
         'loss': args.loss,
-        'numlayers': args.numlayers,
-        'hiddensize': args.hiddensize,
-        'learningrate': args.learningrate,
-        'batchsize': args.batchsize,
-        'weightinit': args.weightinit,
-        'weightdecay': args.weightdecay,
+        'num_layers': args.num_layers,
+        'hidden_size': args.hidden_size,
+        'learning_rate': args.learning_rate,
+        'batch_size': args.batch_size,
+        'weight_init': args.weight_init,
+        'weight_decay': args.weight_decay,
         'epochs': args.epochs,
     }
     with open(os.path.join(models_dir, 'bestconfig.json'), 'w') as f:

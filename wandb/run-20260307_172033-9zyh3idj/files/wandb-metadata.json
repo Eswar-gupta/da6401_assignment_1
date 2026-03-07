@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.11.0",
+  "startedAt":  "2026-03-07T11:50:33.387639Z",
+  "program":  "C:\\Users\\gurra\\OneDrive\\Desktop\\1Acads\\sem-6\\DA6401-DL\\Final_DL_Ass1\\da6401_assignment_1\\question_2_point_1.py",
+  "codePath":  "question_2_point_1.py",
+  "codePathLocal":  "question_2_point_1.py",
+  "git":  {
+    "remote":  "https://github.com/Eswar-gupta/da6401_assignment_1.git",
+    "commit":  "070861d92604358e108b9c48e4c4890789ca4431"
+  },
+  "email":  "varuna433@gmail.com",
+  "root":  "C:\\Users\\gurra\\OneDrive\\Desktop\\1Acads\\sem-6\\DA6401-DL\\Final_DL_Ass1\\da6401_assignment_1",
+  "host":  "DESKTOP-LO1APP7",
+  "executable":  "C:\\Users\\gurra\\anaconda3\\envs\\DA_Ass1\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "789284122624",
+      "used":  "506673475584"
+    }
+  },
+  "memory":  {
+    "total":  "16849293312"
+  },
+  "writerId":  "bpcca5py32ilwjp3ka3y4w4wvy1dt6up"
+}

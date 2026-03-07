@@ -1,0 +1,12 @@
+{"time":"2026-03-07T17:23:37.8361589+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T17:23:39.7890539+05:30","level":"INFO","msg":"stream: created new stream","id":"efi7wyut"}
+{"time":"2026-03-07T17:23:39.7896797+05:30","level":"INFO","msg":"handler: started","stream_id":"efi7wyut"}
+{"time":"2026-03-07T17:23:39.8000956+05:30","level":"INFO","msg":"stream: started","id":"efi7wyut"}
+{"time":"2026-03-07T17:23:39.8000956+05:30","level":"INFO","msg":"sender: started","stream_id":"efi7wyut"}
+{"time":"2026-03-07T17:23:39.8000956+05:30","level":"INFO","msg":"writer: started","stream_id":"efi7wyut"}
+{"time":"2026-03-07T17:24:26.9922717+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T17:24:27.56099+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T17:24:27.5736173+05:30","level":"INFO","msg":"stream: closing","id":"efi7wyut"}
+{"time":"2026-03-07T17:24:27.5736173+05:30","level":"INFO","msg":"handler: closed","stream_id":"efi7wyut"}
+{"time":"2026-03-07T17:24:27.5773714+05:30","level":"INFO","msg":"sender: closed","stream_id":"efi7wyut"}
+{"time":"2026-03-07T17:24:27.5773714+05:30","level":"INFO","msg":"stream: closed","id":"efi7wyut"}
