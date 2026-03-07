@@ -16,7 +16,7 @@ def parse_arguments():
     parser.add_argument('-d', '--dataset', type=str, default='mnist')
     parser.add_argument('-b', '--batch_size', type=int, default=64)
     parser.add_argument('-nhl', '--num_layers', type=int, default=2)
-    parser.add_argument('-sz', '--hidden_size', type=int, default=64)
+    parser.add_argument('-sz', '--hidden_size', type=int, nargs='*', default=64)
     parser.add_argument('-a', '--activation', type=str, default='relu')
     return parser.parse_args()
 
@@ -24,11 +24,11 @@ def parse_arguments():
 def main():
     args = parse_arguments()
 
-    args.weightinit = 'xavier'
+    args.weight_init = 'xavier'
     args.loss = 'crossentropy'
     args.optimizer = 'sgd'
-    args.learningrate = 0.001
-    args.weightdecay = 0.0
+    args.learning_rate = 0.001
+    args.weight_decay = 0.0
     args.epochs = 1
 
     _, _, X_test, y_test = load_data(args.dataset)

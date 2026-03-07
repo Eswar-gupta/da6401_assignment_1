@@ -3,11 +3,11 @@
   "optimizer": "adam",
   "activation": "relu",
   "loss": "crossentropy",
-  "numlayers": 2,
-  "hiddensize": 64,
-  "learningrate": 0.001,
-  "batchsize": 256,
-  "weightinit": "xavier",
-  "weightdecay": 0.0,
+  "num_layers": 2,
+  "hidden_size": 64,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "weight_init": "xavier",
+  "weight_decay": 0.0,
   "epochs": 1
 }
